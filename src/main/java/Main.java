@@ -67,15 +67,5 @@ public class Main {
 		System.out.println(String.valueOf(
 				num.stream().map(n -> rnd.nextInt(101)).min(Integer::compare)
 				.orElse(-1)));
-		
-		System.out.println("Stream findFirst findAny");
-		System.out.println(String.valueOf(
-				msgJapanese.stream().map(str -> str + "ちゃん").findFirst()
-				.orElse("")));
-		
-		System.out.println(String.valueOf(
-				
-				msgJapanese.stream().map(str -> str + "さん").findAny()
-				.orElse("")));
 	}
 }
